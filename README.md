@@ -91,6 +91,7 @@ Menampilkan catatan pemilahan sampah yang telah dibuat oleh pengguna, dengan kem
 - Meninjau aktivitas pemilahan sebagai bahan evaluasi kebiasaan.
 
 ## 📱 Gambaran Halaman Aplikasi
+<img width="254" height="499" alt="image" src="https://github.com/user-attachments/assets/62abcc01-8737-4791-bc94-8bc7f8b07516" />
 
 ### 1. Home
 
@@ -117,22 +118,11 @@ Halaman untuk memasukkan informasi jenis sampah, kategori, jumlah, dan tanggal p
 Halaman untuk melihat dan mengelola catatan pemilahan sampah yang telah dibuat.
 
 ## 🛠️ Teknologi yang Digunakan
-
-### Flutter
-
-Framework pengembangan aplikasi yang digunakan untuk membangun antarmuka dan pengalaman pengguna pada aplikasi mobile Sortify.
-
-### Dart
-
-Bahasa pemrograman yang digunakan dalam pengembangan aplikasi menggunakan Flutter.
-
-### MySQL
-
-Sistem manajemen basis data relasional yang direncanakan untuk menyimpan dan mengelola data aplikasi sesuai kebutuhan implementasi.
-
-### ChatGPT dan Gemini
-
-Tools berbasis kecerdasan buatan yang digunakan untuk membantu proses vibe coding, termasuk eksplorasi ide, penyusunan kode, pemecahan masalah, dan pengembangan aplikasi.
+- Flutter — framework untuk membangun antarmuka dan aplikasi mobile lintas platform.
+- Dart — bahasa pemrograman utama dalam pengembangan aplikasi.
+- Material Design 3 — sistem desain untuk menjaga konsistensi komponen, tema, dan interaksi pengguna.
+- SQLite (sqflite) — database lokal untuk menyimpan catatan aktivitas pemilahan sampah secara persisten pada perangkat.
+- ChatGPT dan Gemini — tools AI-assisted development yang membantu eksplorasi ide, penyusunan kode, debugging, dan proses pengembangan melalui pendekatan vibe coding.
 
 ## 🚀 Status Pengembangan
 
