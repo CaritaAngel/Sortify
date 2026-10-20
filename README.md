@@ -161,3 +161,40 @@ Sortify juga diharapkan dapat menjadi sarana edukasi digital yang mendukung peni
 **Sortify — Cerdas Memilah, Bersama Menjaga Bumi.** ♻️
 
 *Mulai dari langkah kecil, untuk bumi yang lebih baik.*
+
+---
+
+## 🚀 Menjalankan Aplikasi
+
+Pastikan Flutter SDK yang kompatibel dengan constraint pada `pubspec.yaml` tersedia. Dari root proyek:
+
+```bash
+flutter pub get
+flutter analyze
+flutter test
+flutter run
+```
+
+Untuk menjalankan pada iOS dibutuhkan macOS dengan Xcode yang sesuai. Pilih emulator atau perangkat Android/iOS yang terhubung sebelum menjalankan `flutter run`.
+
+## Struktur kode
+
+- `lib/main.dart` — entry point.
+- `lib/app.dart` — konfigurasi MaterialApp.
+- `lib/core/theme/` — palet warna dan tema Material 3.
+- `lib/navigation/` — AppShell dan bottom navigation.
+- `lib/models/` — model kategori, item sampah, dan catatan.
+- `lib/data/seed/` — data awal sampah, kategori, dan panduan.
+- `lib/data/database/` — inisialisasi dan skema SQLite.
+- `lib/data/repositories/` — akses data persisten.
+- `lib/widgets/` — reusable widget.
+- `lib/features/` — enam halaman utama.
+- `test/` — unit test model dan konsistensi data seed.
+
+## Penyimpanan
+
+Catatan disimpan pada database `sortify.db` di direktori database aplikasi. Data tidak tersinkronisasi ke cloud. Berat dalam gram dikonversi ke kilogram untuk statistik berat; catatan dengan satuan `buah` tidak dijumlahkan ke statistik berat.
+
+## Catatan pengujian
+
+Tes otomatis harus dijalankan pada lingkungan dengan Flutter SDK. Uji usability dengan pengguna nyata merupakan langkah terpisah dari `flutter test` dan belum dianggap selesai hanya dengan adanya skenario tes.
